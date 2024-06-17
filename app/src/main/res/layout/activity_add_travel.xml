@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEE0C9"
+    tools:context=".AddTravelActivity">
+
+    <Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/blueDark"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Add Travel"
+            android:textColor="@color/sand"
+            android:textSize="25dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </Toolbar>
+
+    <EditText
+        android:id="@+id/placeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Place"
+        android:background="#96B6C5"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/dateStartEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start date"
+        android:inputType="date"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:background="#96B6C5"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/dateEndEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End date"
+        android:inputType="date"
+        android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+        android:background="#96B6C5"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:background="#96B6C5"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/addTravelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Travel"
+        android:background="#96B6C5"
+        android:textColor="#EEE0C9"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

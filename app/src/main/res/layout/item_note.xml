@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/sandDark"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/noteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/noteImageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/app_logo"></ImageView>
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/blueDark"
+            android:text="Delete note"
+            android:textColor="@color/sand">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>

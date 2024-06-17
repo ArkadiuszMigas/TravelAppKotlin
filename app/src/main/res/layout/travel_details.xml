@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sand">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blueDark">
+
+            <TextView
+                android:id="@+id/travelName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/sand"
+                android:textSize="30dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="data"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/blueDark" />
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/blueDark" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/notesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="534dp" />
+
+            <Button
+                android:id="@+id/addNoteButton"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@color/blueDark"
+                android:text="add note"
+                android:textColor="@color/sand"
+                android:layout_marginTop="10dp">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
